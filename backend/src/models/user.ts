@@ -14,5 +14,8 @@ const UserSchema: Schema = new Schema({
   email: { type: String, required: true },
 });
 
+const UserModel = model<User>('User', UserSchema);
+
+
 // Luo ja vie käyttäjän tietomalli MongoDB:hen
 export default model<User>('User', UserSchema);
